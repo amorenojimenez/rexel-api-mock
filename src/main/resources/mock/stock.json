@@ -1,0 +1,72 @@
+{
+  "type": "stock_items",
+  "id": "sti_1234567890abcdef",
+  "links": {
+    "self": "https://api.marchand.com/api/stock_items/sti_1234567890abcdef"
+  },
+  "attributes": {
+    "sku_code": "SKU-ABC-123",
+    "quantity": 150,
+    "_validate": false,
+    "reference": "EXT-REF-98765",
+    "reference_origin": "ERP-System-X",
+    "metadata": {
+      "warehouse_section": "A3",
+      "fragile": "yes",
+      "last_audit_by": "john.doe"
+    },
+    "created_at": "2025-10-10T14:32:45Z",
+    "updated_at": "2025-10-14T09:20:30Z"
+  },
+  "relationships": {
+    "stock_location": {
+      "data": {
+        "type": "stock_locations",
+        "id": "stl_9876543210fedcba"
+      }
+    },
+    "sku": {
+      "data": {
+        "type": "skus",
+        "id": "sku_abcdef1234567890"
+      }
+    },
+    "reserved_stock": {
+      "data": {
+        "type": "reserved_stocks",
+        "id": "rs_1122334455"
+      }
+    },
+    "stock_reservations": {
+      "data": [
+        {
+          "type": "stock_reservations",
+          "id": "res_001"
+        },
+        {
+          "type": "stock_reservations",
+          "id": "res_002"
+        }
+      ]
+    },
+    "attachments": {
+      "data": [
+        {
+          "type": "attachments",
+          "id": "att_abc123"
+        }
+      ]
+    },
+    "versions": {
+      "data": [
+        {
+          "type": "versions",
+          "id": "ver_1"
+        }
+      ]
+    }
+  },
+  "meta": {
+    "mode": "live"
+  }
+}

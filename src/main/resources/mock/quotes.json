@@ -1,0 +1,100 @@
+{
+  "data": {
+    "type": "quotes",
+    "id": "quo_9f82a6b9d4f84a3f9c1b2a7e3e7f51a2",
+    "links": {
+      "self": "https://api.marchand.com/api/quotes/quo_9f82a6b9d4f84a3f9c1b2a7e3e7f51a2"
+    },
+    "attributes": {
+      "number": "Q-2025-1042",
+      "currency_code": "EUR",
+      "subtotal_cents": 175000,
+      "subtotal_float": 1750.00,
+      "formatted_subtotal": "€1 750,00",
+      "discount_cents": 50000,
+      "formatted_discount": "€500,00",
+      "total_tax_cents": 24500,
+      "formatted_total_tax": "€245,00",
+      "shipping_cents": 20000,
+      "formatted_shipping": "€200,00",
+      "grand_total_cents": 169500,
+      "grand_total_float": 1695.00,
+      "formatted_grand_total": "€1 695,00",
+      "status": "pending_customer_approval",
+      "expires_at": "2025-11-01T23:59:59Z",
+      "approved_at": null,
+      "rejected_at": null,
+      "notes": "Remise spéciale client fidélité Gold. Validité 15 jours.",
+      "reference": "EXT-QUOTE-8901",
+      "reference_origin": "CRM-Hubspot",
+      "metadata": {
+        "sales_rep": "john.doe@marchand.com",
+        "priority": "high",
+        "delivery_estimate_days": 7
+      },
+      "created_at": "2025-10-14T09:15:00Z",
+      "updated_at": "2025-10-15T08:40:00Z"
+    },
+    "relationships": {
+      "customer": {
+        "data": {
+          "type": "customers",
+          "id": "cus_4a8d7b3e2f6c9d8e"
+        }
+      },
+      "order": {
+        "data": {
+          "type": "orders",
+          "id": "ord_2b7f4a6e3d9c8b1f"
+        }
+      },
+      "line_items": {
+        "data": [
+          {
+            "type": "line_items",
+            "id": "li_abc123",
+            "attributes": {
+              "sku_code": "SKU-LAPTOP-001",
+              "name": "Laptop Pro 15”",
+              "quantity": 2,
+              "unit_price_cents": 80000,
+              "formatted_unit_price": "€800,00",
+              "total_amount_cents": 160000,
+              "formatted_total": "€1 600,00"
+            }
+          },
+          {
+            "type": "line_items",
+            "id": "li_def456",
+            "attributes": {
+              "sku_code": "SKU-MOUSE-002",
+              "name": "Souris sans fil ergonomique",
+              "quantity": 1,
+              "unit_price_cents": 15000,
+              "formatted_unit_price": "€150,00",
+              "total_amount_cents": 15000,
+              "formatted_total": "€150,00"
+            }
+          }
+        ]
+      },
+      "price_list": {
+        "data": {
+          "type": "price_lists",
+          "id": "pl_b2b_fr_2025"
+        }
+      },
+      "attachments": {
+        "data": [
+          {
+            "type": "attachments",
+            "id": "att_quote_pdf_001"
+          }
+        ]
+      }
+    },
+    "meta": {
+      "mode": "draft"
+    }
+  }
+}

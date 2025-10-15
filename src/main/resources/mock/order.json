@@ -1,0 +1,245 @@
+{
+  "data": {
+    "type": "orders",
+    "id": "ord_7d9e1b4f3c2a5f6e8b9c0d1a",
+    "links": {
+      "self": "https://api.monmarchand.com/api/orders/ord_7d9e1b4f3c2a5f6e8b9c0d1a"
+    },
+    "attributes": {
+      "number": "ORD-2025-7890",
+      "affiliate_code": "AFF-PARTNER123",
+      "autorefresh": true,
+      "place_async": false,
+      "status": "placed",
+      "payment_status": "paid",
+      "fulfillment_status": "in_progress",
+      "guest": false,
+      "editable": false,
+      "customer_email": "client@example.com",
+      "customer_type": "returning",
+      "language_code": "fr",
+      "currency_code": "EUR",
+      "tax_included": true,
+      "tax_rate": 0.20,
+      "freight_taxable": true,
+      "payment_method_taxable": false,
+      "adjustment_taxable": false,
+      "gift_card_taxable": false,
+      "requires_billing_info": true,
+      "country_code": "FR",
+      "shipping_country_code_lock": "FR",
+      "coupon_code": "SUMMER2025",
+      "gift_card_code": null,
+      "subtotal_amount_cents": 100000,
+      "subtotal_amount_float": 1000.00,
+      "formatted_subtotal_amount": "€1 000,00",
+      "shipping_amount_cents": 15000,
+      "shipping_amount_float": 150.00,
+      "formatted_shipping_amount": "€150,00",
+      "payment_method_amount_cents": 0,
+      "payment_method_amount_float": 0.00,
+      "formatted_payment_method_amount": "€0,00",
+      "discount_amount_cents": -5000,
+      "discount_amount_float": -50.00,
+      "formatted_discount_amount": "-€50,00",
+      "adjustment_amount_cents": 0,
+      "adjustment_amount_float": 0.00,
+      "formatted_adjustment_amount": "€0,00",
+      "gift_card_amount_cents": 0,
+      "gift_card_amount_float": 0.00,
+      "formatted_gift_card_amount": "€0,00",
+      "total_tax_amount_cents": 21000,
+      "total_tax_amount_float": 210.00,
+      "formatted_total_tax_amount": "€210,00",
+      "subtotal_tax_amount_cents": 20000,
+      "subtotal_tax_amount_float": 200.00,
+      "formatted_subtotal_tax_amount": "€200,00",
+      "shipping_tax_amount_cents": 1000,
+      "shipping_tax_amount_float": 10.00,
+      "formatted_shipping_tax_amount": "€10,00",
+      "total_amount_cents": 121000,
+      "total_amount_float": 1210.00,
+      "formatted_total_amount": "€1 210,00",
+      "total_taxable_amount_cents": 115000,
+      "total_taxable_amount_float": 1150.00,
+      "formatted_total_taxable_amount": "€1 150,00",
+      "skus_count": 3,
+      "line_item_options_count": 2,
+      "shipments_count": 1,
+      "tax_calculations_count": 1,
+      "validations_count": 0,
+      "errors_count": 0,
+      "payment_source_details": {
+        "brand": "Visa",
+        "last4": "4242",
+        "expiry": "05/27"
+      },
+      "token": "tok_abcd1234efgh5678",
+      "cart_url": null,
+      "return_url": "https://monsite.com/checkout/return",
+      "terms_url": "https://monsite.com/terms",
+      "privacy_url": "https://monsite.com/privacy",
+      "checkout_url": "https://checkout.monmarchand.com/orders/ord_7d9e1b4f3c2a5f6e8b9c0d1a",
+      "placed_at": "2025-10-15T10:30:00Z",
+      "approved_at": "2025-10-15T10:35:00Z",
+      "cancelled_at": null,
+      "payment_updated_at": "2025-10-15T10:35:00Z",
+      "fulfillment_updated_at": "2025-10-15T11:00:00Z",
+      "refreshed_at": "2025-10-15T11:00:00Z",
+      "archived_at": null,
+      "subscription_created_at": null,
+      "expires_at": null,
+      "reference": "EXT-ORD-567890",
+      "reference_origin": "ERP-System-X",
+      "metadata": {
+        "channel": "webstore",
+        "sales_rep": "alice.vente"
+      },
+      "created_at": "2025-10-14T22:00:00Z",
+      "updated_at": "2025-10-15T11:00:00Z"
+    },
+    "relationships": {
+      "market": {
+        "data": {
+          "type": "markets",
+          "id": "mkt_fr_main"
+        }
+      },
+      "customer": {
+        "data": {
+          "type": "customers",
+          "id": "cus_12345abcdef"
+        }
+      },
+      "shipping_address": {
+        "data": {
+          "type": "addresses",
+          "id": "addr_ship_001"
+        }
+      },
+      "billing_address": {
+        "data": {
+          "type": "addresses",
+          "id": "addr_bill_001"
+        }
+      },
+      "store": {
+        "data": {
+          "type": "stores",
+          "id": "store_online_fr"
+        }
+      },
+      "default_shipping_method": {
+        "data": {
+          "type": "shipping_methods",
+          "id": "shipmeth_standard_fr"
+        }
+      },
+      "default_payment_method": {
+        "data": {
+          "type": "payment_methods",
+          "id": "paymeth_credit_card"
+        }
+      },
+      "available_payment_methods": {
+        "data": [
+          {
+            "type": "payment_methods",
+            "id": "paymeth_credit_card"
+          },
+          {
+            "type": "payment_methods",
+            "id": "paymeth_paypal"
+          }
+        ]
+      },
+      "line_items": {
+        "data": [
+          {
+            "type": "line_items",
+            "id": "li_001",
+            "attributes": {
+              "sku_code": "SKU-PHONE-001",
+              "name": "Smartphone XYZ",
+              "quantity": 1,
+              "unit_price_cents": 50000,
+              "formatted_unit_price": "€500,00",
+              "total_amount_cents": 50000,
+              "formatted_total_amount": "€500,00"
+            }
+          },
+          {
+            "type": "line_items",
+            "id": "li_002",
+            "attributes": {
+              "sku_code": "SKU-CASE-002",
+              "name": "Coque de protection",
+              "quantity": 2,
+              "unit_price_cents": 2500,
+              "formatted_unit_price": "€25,00",
+              "total_amount_cents": 5000,
+              "formatted_total_amount": "€50,00"
+            }
+          },
+          {
+            "type": "line_items",
+            "id": "li_003",
+            "attributes": {
+              "sku_code": "SKU-HEADPHONES-003",
+              "name": "Casque sans fil",
+              "quantity": 1,
+              "unit_price_cents": 45000,
+              "formatted_unit_price": "€450,00",
+              "total_amount_cents": 45000,
+              "formatted_total_amount": "€450,00"
+            }
+          }
+        ]
+      },
+      "shipments": {
+        "data": [
+          {
+            "type": "shipments",
+            "id": "shp_001"
+          }
+        ]
+      },
+      "transactions": {
+        "data": [
+          {
+            "type": "transactions",
+            "id": "txn_7890abcd"
+          }
+        ]
+      },
+      "captures": {
+        "data": [
+          {
+            "type": "captures",
+            "id": "cap_4567efgh"
+          }
+        ]
+      },
+      "refunds": {
+        "data": []
+      },
+      "voids": {
+        "data": []
+      },
+      "returns": {
+        "data": []
+      },
+      "attachments": {
+        "data": [
+          {
+            "type": "attachments",
+            "id": "att_invoice_pdf_001"
+          }
+        ]
+      }
+    },
+    "meta": {
+      "mode": "live"
+    }
+  }
+}

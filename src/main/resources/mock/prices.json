@@ -1,0 +1,124 @@
+{
+  "data": {
+    "type": "prices",
+    "id": "prc_abcdef1234567890",
+    "links": {
+      "self": "https://api.marchand.com/api/prices/prc_abcdef1234567890"
+    },
+    "attributes": {
+      "currency_code": "EUR",
+      "sku_code": "SKU-EXEMPLE-001",
+      "amount_cents": 2500,
+      "amount_float": 25.00,
+      "formatted_amount": "€25,00",
+      "original_amount_cents": 3000,
+      "formatted_original_amount": "€30,00",
+      "compare_at_amount_cents": 3000,
+      "compare_at_amount_float": 30.00,
+      "formatted_compare_at_amount": "€30,00",
+      "rule_outcomes": [
+        {
+          "rule_id": "rule_10pct_off",
+          "action": "percentage",
+          "value": 0.10,
+          "resulting_amount_cents": 2250
+        }
+      ],
+      "processed_at": "2025-10-14T12:00:00Z",
+      "created_at": "2025-10-10T08:30:00Z",
+      "updated_at": "2025-10-14T11:45:00Z",
+      "reference": "EXT-REF-PRICE-001",
+      "reference_origin": "PricingEngineX",
+      "rules": {
+        "some_rule_definition": {
+          "condition": {
+            "field": "price.amount_cents",
+            "matcher": "gt",
+            "value": 2000
+          },
+          "action": {
+            "type": "percentage",
+            "value": 0.10
+          }
+        }
+      },
+      "resource_payload": {
+        "extra_data": "quelque chose"
+      },
+      "jwt_custom_claim": {
+        "claim_key": "claim_value"
+      },
+      "metadata": {
+        "region": "EU",
+        "campaign": "SummerSale2025"
+      }
+    },
+    "relationships": {
+      "price_list": {
+        "data": {
+          "type": "price_lists",
+          "id": "pl_1234abcd"
+        }
+      },
+      "sku": {
+        "data": {
+          "type": "skus",
+          "id": "sku_abcdef1234567890"
+        }
+      },
+      "price_tiers": {
+        "data": [
+          {
+            "type": "price_tiers",
+            "id": "ptier_001"
+          },
+          {
+            "type": "price_tiers",
+            "id": "ptier_002"
+          }
+        ]
+      },
+      "price_volume_tiers": {
+        "data": [
+          {
+            "type": "price_volume_tiers",
+            "id": "pvoltier_001"
+          }
+        ]
+      },
+      "price_frequency_tiers": {
+        "data": [
+          {
+            "type": "price_frequency_tiers",
+            "id": "pfreqtier_001"
+          }
+        ]
+      },
+      "attachments": {
+        "data": [
+          {
+            "type": "attachments",
+            "id": "att_price_001"
+          }
+        ]
+      },
+      "versions": {
+        "data": [
+          {
+            "type": "versions",
+            "id": "ver_price_001"
+          }
+        ]
+      },
+      "jwt_customer": {
+        "data": {
+          "type": "jwt_customers",
+          "id": "jwtcust_001"
+        }
+      }
+    },
+    "meta": {
+      "mode": "live"
+    }
+  }
+}
